@@ -1,0 +1,85 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body styling */
+body {
+  background-color: #f6f9f8; /* off-white background */
+  color: #333333;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #20c997; /* teal headings */
+}
+
+/* Buttons default */
+button {
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: inherit;
+}
+
+/* Links default */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Container default */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+/* Flex helper classes */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Card default */
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Input default */
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 8px 0;
+}
+
+/* Utility classes */
+.mt-10 { margin-top: 10px; }
+.mb-10 { margin-bottom: 10px; }
+.p-10 { padding: 10px; }
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .flex-between {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
